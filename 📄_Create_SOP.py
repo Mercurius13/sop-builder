@@ -257,7 +257,7 @@ else:
 
     with col4:
         if state.section_index == len(text_areas) - 1:
-            regenerate = st.button("Change Word Limit and Regenerate", disabled=st.session_state.generated_sop == "")
+            regenerate = st.button("Try Again", disabled=st.session_state.generated_sop == "")
             user_data = database.get_user_data_by_id(st.session_state.user_id)
             fetched_data = {
                 "program": user_data.get("program", ""),
